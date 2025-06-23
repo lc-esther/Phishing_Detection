@@ -15,8 +15,6 @@ This project is a complete phishing detection system using **XGBoost**, a powerf
 ---
 
 
----
-
 ## 🧠 Machine Learning - XGBoost
 
 ### ✅ Why XGBoost?
