@@ -1,0 +1,49 @@
+.result-loading {
+  font-size: 20px;
+  color: gray;
+  text-align: center;
+  display: block;
+}
+
+.result-phishing {
+  background-color: #ff9999;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.result-safe {
+  background-color: #99ff99;
+  color: green;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.progress {
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  border: 3px solid transparent;
+  border-top: 3px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

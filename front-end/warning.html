@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>⚠️ Phishing Alert</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #000000, #330000);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .alert-box {
+      background: #1a0000;
+      border: 3px solid red;
+      border-radius: 15px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 0 20px red;
+      animation: pulse 1.5s infinite;
+      max-width: 500px;
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 20px red;
+      }
+
+      50% {
+        box-shadow: 0 0 40px #ff1a1a;
+      }
+
+      100% {
+        box-shadow: 0 0 20px red;
+      }
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #ff3333;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin: 10px 0;
+      color: #ff9999;
+    }
+
+    .warning-icon {
+      font-size: 60px;
+      animation: shake 0.6s infinite alternate;
+    }
+
+    @keyframes shake {
+      0% {
+        transform: rotate(-5deg);
+      }
+
+      100% {
+        transform: rotate(5deg);
+      }
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 12px 30px;
+      font-size: 16px;
+      background: hsl(0, 100%, 50%);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #cc0000;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="alert-box">
+    <div class="warning-icon">⚠️</div>
+    <h1>Phishing Site Detected!</h1>
+    <p>This website appears to be trying to steal your personal information.</p>
+    <p>It is strongly advised to exit immediately.</p>
+    <button onclick="window.close()">🚫 Close Tab</button>
+  </div>
+</body>
+
+</html>
